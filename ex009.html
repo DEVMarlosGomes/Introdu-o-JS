@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+   // Função para calcular e exibir o ano futuro
+function previsaoFuturo() {
+    // Pergunta o nome do usuário
+    const nome = prompt("Qual é o seu nome?");
+    
+    // Pergunta o ano atual
+    const anoAtual = new Date().getFullYear();
+    
+    // Pergunta quantos anos o usuário quer adicionar
+    const anosAdicionar = parseInt(prompt("Quantos anos você quer adicionar?"));
+    
+    // Calcula o ano futuro
+    const anoFuturo = anoAtual + anosAdicionar;
+    
+    // Exibe a previsão do futuro
+    alert(`${nome}, no ano de ${anoFuturo}, você terá ${anosAdicionar} anos a mais!`);
+}
+
+// Chama a função para executar
+previsaoFuturo();
+
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
